@@ -1,0 +1,687 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Cinzel:wght@400..900&family=Grey+Qo&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #464646;
+   
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    font-family: "raleway", sans-serif;
+    
+   
+
+}
+
+/*encabezado */
+
+.encabezado {
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    top: 0;
+   
+}
+
+.encabezado .link-encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    padding: 35px;
+    font-size: 1rem;
+    
+}
+
+.link-encabezado a:hover {
+    color: #046494;
+    font-size: 1.2rem;
+    
+}
+
+/*banner */
+
+.principal {
+    background-image: url(/imagenes/Banner.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vw;
+    top: 16%;
+    position: absolute;
+    margin-bottom: 60px;
+    border-top: 2px solid whitesmoke;
+   
+    
+   
+}
+
+
+#rol {
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 16vw;
+    top: 33vw;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+
+}
+
+
+.perfil img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid #c5c4c4;
+    position: absolute;
+    left: 14%;
+    top: 24%;
+    filter: contrast(135%);
+}
+
+.sociales {
+    display: flex;
+    top: 85%;
+    padding-left: 40%;
+    position: absolute;
+    justify-content: space-between;
+    
+}
+
+ .sociales li img {
+    width: 32px;
+    height: 32px;
+    background-color: #464646;
+    border-radius: 25px;
+    border: 1px solid #464646;
+    margin-inline: 100px;
+   
+}
+ 
+.sociales li img:hover {
+    background-color: #046494;
+    border: 1px solid #046494;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cv {
+    text-align: center;
+    margin-left: 10%;
+    font-weight: 500;
+}
+
+.cv a:hover {
+    color: #046494; 
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*sobre mi*/
+
+
+.sobre-mi {
+    background-color: #d0dcf0;
+    font-size: 12px;
+    width: 90%;
+    height: 45%;
+    padding: 60px;
+    margin: 57% auto 6% auto;
+    border-radius: 30px;
+}
+
+.sobre-mi h2 {
+    padding: 20px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.sobre-mi p {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+/*cards */
+
+
+.titulo-h,
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin: 70px;
+    display: block;
+    align-items: center;
+    display: block;
+    font-family: "cinzel";
+}
+
+
+.formacion,
+.hobbies,
+.skills {
+width: 100%;
+height: 450px;
+padding-top: 40px;
+
+}
+.card-h,
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+        
+}
+  .formacion .card .items,
+  .hobbies .card-h .item {
+    padding: 0;
+    width: 15%;
+    height: 180px;
+    color: whitesmoke;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #d2def3;
+    border-radius: 15px;
+    filter: blur(0.3);
+   
+}
+
+   
+  .card .items{
+    width: 15%;
+    height: 180px;
+    border: 3px solid #c7c4c4;
+    text-align: center;
+    background-color: #d2def3;
+    border-radius: 15px;
+    filter: blur(0.3);
+    padding: 60px 0;
+}
+
+
+
+ .skills .items img {
+  width: 15%;
+  height: 180px;
+  
+}
+
+.hobbies .card-h .item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.card .items:hover,
+.hobbies .card-h .item:hover {
+    box-shadow: 7px 7px 25px 8px #898a90ae;
+    cursor: pointer;
+}
+
+ 
+.card .items img {
+    width: 30px;
+    height: 30px;
+}
+
+ 
+
+
+
+.formacion .items img {
+    width: 35%;
+    height: 60px;
+    padding-top: 10px;
+}
+
+/*proyectos */
+
+.proyectos {
+    width: 100%;
+    height: 500px;
+    padding: 7vw 19vw; 
+   
+}
+
+.proyectos .card-p {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.proyectos .card-p .item-info {
+    width: 18%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 5vw auto;
+}
+
+
+.proyectos .card-p .item-img img{
+  width: 19vw;
+  height: 27vw;
+  margin: 5px auto;
+}
+
+
+    
+
+
+.proyectos .item-info button {
+    width: 100px;
+    height:30px;
+    background-color: #121053;
+    text-align: center;
+    border-radius: 25px;
+    margin: 12px auto;
+    border: none;
+    color: whitesmoke;
+   
+}
+
+.proyectos .item-info button:hover {
+    border: 2px solid #2adadd;
+    cursor: pointer;
+}
+
+.proyectos .item-info a {
+    color: whitesmoke;
+
+}
+
+/*contacto */
+
+.contacto {
+    width: 100%;
+    height: 690px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./imagenes/contacto2-Banner.png);
+    background-size: cover;
+    filter: blur(0.7);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 140px;
+   
+}
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 2rem;
+    margin: 16px auto;
+    display: block;
+    align-items: center;
+    display: block;
+    font-family: "cinzel";
+}
+
+.contacto .datos {
+    width: 35%;
+    height:70px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 3;
+ 
+    
+}
+
+.contacto .datos img {
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+}
+
+.contacto .formulario {
+    width: 35%;
+    height: auto;
+    text-align: center;
+    border: 4px solid lightgray;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding-top:20px;
+    float: right;
+    right: 100px;
+    filter: blur(0.3);
+    background: #d7d7d9de;
+    
+}
+
+
+.contacto .formulario input {
+    margin: 25px auto;
+    width: 80%;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+  
+}
+
+.contacto .formulario textarea{
+    width: 80%;
+    height: 70px;
+    border-radius: 15px;
+    display: block;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    
+}
+
+.contacto ul li {
+    margin-left: 32px;
+}
+
+#enviar, #borrar {
+width: 35%;
+height: 45px;
+margin-top: 25px;
+font-size: 18px;
+border-radius: 25px;
+background: #121053;
+color: whitesmoke;
+border: none;
+
+}
+.proyectos .card-proyectos button:hover,
+#enviar:hover, #borrar:hover {
+    border: 2px solid #2adadd;
+    cursor: pointer;
+}
+
+
+/*footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #d7d7d9d3;
+    filter: blur(0.9);
+   
+    
+      
+}
+
+footer p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 39px;
+    color:#464646;
+ 
+}
+
+
+/*responsivo mobile*/
+
+@media (max-width: 500px){
+     
+    body {
+        width: 100vw;
+        height: 100%;
+    }
+    
+    .encabezado {
+        display: none;
+    }
+
+    .principal {
+        top: 0;
+        width:100vw;
+        height: 295px;
+        
+    }
+
+    #rol {
+        top: 25vw;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3.5vw;
+        right: 7%;
+    }
+
+    .perfil img {
+        width: 30vw;
+        height: 30vw;
+        left: 9.5vw;
+        top: 10vw;
+    }
+
+    .sociales {
+        top: 33vw;
+        left: 0;
+    }
+
+    .sociales li img {
+        width: 6vw;
+        height: 6vw;
+        margin-inline: 5vw;
+
+    }
+
+    .cv {
+        font-size: 0.7rem;
+    }
+
+    .sobre-mi {
+        width: 100%;
+        height: auto;
+        margin-top: 50vw;
+        padding: 3vw 5.5vw;
+        top: 16vw;
+        border-radius: 0;
+
+    }
+
+    .titulo-h {
+        margin-top: 240px;
+        font-size: 1.7rem;
+    }
+
+    .titulo-contacto,
+    .titulo {
+        margin: 5vw;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+   
+    .formacion,
+    .skills {
+        height: 28%;
+        margin-top: 30px;
+    }
+    
+    .hobbies {
+        height: 25%;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .card-h,
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 5vw;
+        margin: 14vw;
+             
+    }
+    
+    .card-h .item {
+        margin: 9vw 1.5vw;
+        gap: 2vw;
+        
+    }
+
+  
+    .formacion .card .items,
+    .skills .card .items {
+    
+        width: 40vw;
+        height: 43vw;
+    }
+    
+    .hobbies .card-h .item {
+        width: 42vw;
+        height: 49vw;
+        gap: 6vw;
+    }
+
+    
+
+    .item-p {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+
+    .card .items {
+        width: 40%;
+        height: 30%;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+
+    .proyectos {
+        margin-top: 10vw;
+        left: 10vw;
+        gap: 6vw;
+        padding: 23px;
+        height: 30%;
+    }
+
+    .proyectos .card-p .item-img img {
+        width: 40vw;
+        height: 53vw;
+        
+    }
+
+    .contacto {
+        margin-top: 17px;
+        height: 1000px;
+        text-align: left;
+          
+    }
+
+    .contacto .titulo-contacto {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-left: 27vw;
+    }
+
+    .contactos .datos {
+        width: 100%;
+        height: 30%;
+        text-align: left;
+       
+               
+    }
+
+    .contacto .datos ul li{
+       display: flex;
+       text-align: left;
+       font-size: 1.2rem;
+       gap: 2vw;
+       align-items: center;
+    }
+
+    .contacto .formulario {
+        margin: 100% 5% 7% 5%;
+        width: 90%;
+        text-align: center;
+        padding: 5% 2%;
+        height: 57%;
+             
+    }  
+
+    footer {
+        margin-top: 15%;
+    }
+}
+
+/*responsivo tablet*/
+
+@media (min-width: 501px) and (max-width: 900px) {
+ 
+    .encabezado .link-encabezado {
+        justify-content: left;
+        gap: 8vw;
+    }
+
+    .principal {
+        width: 100%;
+        top: 8%;
+    }
+
+    .perfil img {
+        top: 8vw;
+    }
+
+    #rol {
+        top: 36vw;
+        right: 13vw;
+    }
+
+    .sociales {
+        top: 44vw;
+    }
+
+    .sociales li img {
+        margin-inline: 8vw;
+    }
+    
+    .proyectos .card-p .item-img img {
+     width: 41vw;
+     height: 50vw;
+     left: 9vw;
+     margin-bottom: 10vw;
+    
+    }
+
+    .proyectos .card-p .item-info {
+        margin-top: 11vw;
+        font-size: 1.2rem;
+    }
+
+    .contacto {
+        margin-top: 23vw;
+
+    }
+    .contacto .datos li {
+        text-align: left;
+        margin-left: 0;
+        display: flex;
+        align-content: center;
+       
+    }
+
+    .contacto .datos li img {
+        align-items: center;
+
+
+    }
+}
+
+
+
+
+ 
