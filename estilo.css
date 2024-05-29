@@ -52,7 +52,7 @@ body{
 /*banner */
 
 .principal {
-    background-image: url(/imagenes/Banner.png);
+    background-image: url(./imagenes/Banner.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100%;
