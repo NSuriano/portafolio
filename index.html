@@ -33,6 +33,10 @@
 
         <div class="relleno">
 
+            <div class="saludo">
+                <h3>Hola!</h3>
+                <h3>soy</h3>
+            </div>
             <div class="presentacion">
                 <h3 id="rol">Desarrollo Web</h3>
 
@@ -111,6 +115,7 @@
         <h2 class="titulo-h">Hobbies</h2>
 
         <div class="card-h">
+
             <div class="item"><img src="./imagenes/caminar.png" alt="caminar">
                 <h3>Caminatas</h3>
             </div>
@@ -183,14 +188,14 @@
         <h2 class="titulo">Proyectos</h2>
 
         <div class="card-p">
-           
+
             <div class="item-img">
                 <img src="./imagenes/encriptador.png" alt="proyecto">
             </div>
             <div class="item-info">
                 <h4>Encriptador de Texto</h4>
                 <p>Proyecto<br>Challenge Oracle</p>
-               <button id="demo"><a href="https://nsuriano.github.io/Encriptador/" target="_blank">Demo</a></button>
+                <button id="demo"><a href="https://nsuriano.github.io/Encriptador/" target="_blank">Demo</a></button>
             </div>
 
         </div>
@@ -215,26 +220,43 @@
         </div>
 
         <fieldset class="formulario">
-            <form method="post" name="portafolio" action="https://formsubmit.co/surii2908@gmail.com">
 
-                <input id="nombre"  type="text"  name="nombre" placeholder=" Nombre" required><span id="visto-nombre"></span>
-                <input id="mail"    type="email" name="mail"   placeholder=" E-mail" required><span id="visto-mail"></span>
-                <input id="asunto"  type="text"  name="asunto" placeholder=" Asunto" required>
-                <textarea class="consulta" cols="10" rows="3" name="consulta"
-                 placeholder=" Motivo de consulta..." required>
-                </textarea>
-                <button type="submit" id="enviar" value="enviar">Enviar</button>
+            <form  name="portafolio" id="formulario" data-formulario>
+                <input id="nombre" type="text" name="nombre" placeholder=" Nombre" maxlength="50"  required>
+                <p class="error-nombre"></p>
+                
+                <input id="mail" type="email" name="mail" placeholder=" E-mail"  required>
+                <span class="error-mail"></span>
+                
+                <input id="asunto" type="text" name="asunto" placeholder=" Asunto" maxlength="50" required>
+                <span class="error-asunto"></span>
+               
+                <textarea id="consulta" cols="10" rows="3" name="consulta" placeholder=" Motivo de consulta..." maxlength="300" required></textarea>
+                  
+                <span class="error-consulta"></span>
+                
+                <button type="submit" id="enviar" value="enviar" disabled>Enviar</button>
+
                 <button type="reset" id="borrar">Borrar</button>
             </form>
+
+            <span id="resultado"></span>
+
         </fieldset>
 
         </section>
 
-        <footer>
-            <p>Desarrollado por Norma Suriano - 2024</p>
+        <script src="main.js"></script>
 
-        </footer>
     </main>
+
+    <footer>
+        <p>Desarrollado por Norma Suriano - 2024</p>
+
+    </footer>
+
 </body>
 
 </html>
+
+<!--https://formsubmit.co/surii2908@gmail.com -->

@@ -19,8 +19,6 @@ body{
     background-color: #f1f1f1;
     font-family: "raleway", sans-serif;
     
-   
-
 }
 
 /*encabezado */
@@ -54,7 +52,7 @@ body{
 /*banner */
 
 .principal {
-    background-image: url(./imagenes/Banner.png);
+    background-image: url(/imagenes/Banner.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100%;
@@ -64,7 +62,6 @@ body{
     margin-bottom: 60px;
     border-top: 2px solid whitesmoke;
    
-    
    
 }
 
@@ -80,21 +77,32 @@ body{
 
 }
 
+.relleno .saludo {
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 22vw;
+    top: 14vw;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
 
 .perfil img {
-    width: 250px;
-    height: 250px;
+    width: 290px;
+    height: 290px;
     border-radius: 100%;
     border: 5px solid #c5c4c4;
     position: absolute;
     left: 14%;
-    top: 24%;
+    top: 17%;
     filter: contrast(135%);
 }
 
 .sociales {
     display: flex;
-    top: 85%;
+    top: 87%;
     padding-left: 40%;
     position: absolute;
     justify-content: space-between;
@@ -140,7 +148,7 @@ body{
     font-size: 12px;
     width: 90%;
     height: 45%;
-    padding: 60px;
+    padding: 80px 40px;
     margin: 57% auto 6% auto;
     border-radius: 30px;
 }
@@ -188,7 +196,7 @@ padding-top: 40px;
     margin-top: 25px;
         
 }
-  .formacion .card .items,
+.formacion .card .items,
   .hobbies .card-h .item {
     padding: 0;
     width: 15%;
@@ -197,7 +205,6 @@ padding-top: 40px;
     border-radius: 15px;
     text-align: center;
     background-color: #d2def3;
-    border-radius: 15px;
     filter: blur(0.3);
    
 }
@@ -212,6 +219,7 @@ padding-top: 40px;
     border-radius: 15px;
     filter: blur(0.3);
     padding: 60px 0;
+
 }
 
 
@@ -375,6 +383,7 @@ padding-top: 40px;
   
 }
 
+
 .contacto .formulario textarea{
     width: 80%;
     height: 70px;
@@ -400,6 +409,12 @@ color: whitesmoke;
 border: none;
 
 }
+
+#enviar:disabled {
+    background: #464646;
+    border: none;
+}
+
 .proyectos .card-proyectos button:hover,
 #enviar:hover, #borrar:hover {
     border: 2px solid #2adadd;
@@ -448,6 +463,14 @@ footer p {
         
     }
 
+    .relleno .saludo {
+        top: 5vw;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.5vw;
+        right: 19%;
+    }
+
     #rol {
         top: 25vw;
         margin: 0 auto;
@@ -471,7 +494,7 @@ footer p {
     .sociales li img {
         width: 6vw;
         height: 6vw;
-        margin-inline: 5vw;
+        margin-inline: 6vw;
 
     }
 
@@ -562,11 +585,11 @@ footer p {
     }
 
     .proyectos {
-        margin-top: 10vw;
+        margin: 3vw 0;
         left: 10vw;
         gap: 6vw;
-        padding: 23px;
-        height: 30%;
+        padding: 50px 23px;
+        height: 35%;
     }
 
     .proyectos .card-p .item-img img {
@@ -576,45 +599,58 @@ footer p {
     }
 
     .contacto {
-        margin-top: 17px;
-        height: 1000px;
+        margin-top: 170px;
+        height: 100px;
         text-align: left;
+        margin-left: 0;
+
           
     }
 
     .contacto .titulo-contacto {
         text-align: center;
         font-size: 1.7rem;
-        margin-left: 27vw;
+        margin-left: 5vw;
     }
 
-    .contactos .datos {
+    .contactos .datos li img {
         width: 100%;
         height: 30%;
         text-align: left;
-       
+        
                
     }
 
+   .contacto .datos ul {
+  
+    margin-left: -80px;
+   }
+
     .contacto .datos ul li{
        display: flex;
+       align-items: center;
        text-align: left;
+       margin: 0;
        font-size: 1.2rem;
        gap: 2vw;
-       align-items: center;
+ 
     }
 
     .contacto .formulario {
-        margin: 100% 5% 7% 5%;
+        margin-top: 90vw;
+        left: 5vw;
         width: 90%;
+        height: 500px;
         text-align: center;
-        padding: 5% 2%;
-        height: 57%;
-             
+        height: 90%;
+        position: absolute     
     }  
 
     footer {
-        margin-top: 15%;
+        margin-top: 100px;
+        position: absolute;
+        top: 748%;
+        height: 23%;
     }
 }
 
@@ -630,10 +666,12 @@ footer p {
     .principal {
         width: 100%;
         top: 8%;
+        margin-bottom: 8vw;
     }
 
     .perfil img {
-        top: 8vw;
+        top: 6vw;
+        left: 7vw;
     }
 
     #rol {
@@ -642,11 +680,15 @@ footer p {
     }
 
     .sociales {
-        top: 44vw;
+        top: 46vw;
     }
 
     .sociales li img {
         margin-inline: 8vw;
+    }
+
+    .sobre-mi {
+        top: 70vw;
     }
     
     .proyectos .card-p .item-img img {
@@ -655,6 +697,16 @@ footer p {
      left: 9vw;
      margin-bottom: 10vw;
     
+    }
+
+    .hobbies .card-h .item {
+        width: 19%;
+    } 
+
+
+    .skills .card .items,
+    .formacion .card .items {
+       width: 17.5%;
     }
 
     .proyectos .card-p .item-info {
