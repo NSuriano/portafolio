@@ -410,11 +410,6 @@ border: none;
 
 }
 
-#enviar:disabled {
-    background: #464646;
-    border: none;
-}
-
 .proyectos .card-proyectos button:hover,
 #enviar:hover, #borrar:hover {
     border: 2px solid #2adadd;
