@@ -9,16 +9,16 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: #464646;
+    
    
 }
 
 body{
     width: 100%;
     height: auto;
-    background-color: #f1f1f1;
+    background-color: #f2eeee;
     font-family: "raleway", sans-serif;
-    
+    color: #464646;
 }
 
 /*encabezado */
@@ -27,26 +27,27 @@ body{
     position: fixed;
     background-color: #f1f1f1;
     width: 100%;
+    height: 80px;
     text-align: center;
-    margin-bottom: 5px;
     top: 0;
+    z-index: 10;
    
 }
 
 .encabezado .link-encabezado {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 80px;
-    padding: 35px;
-    font-size: 1rem;
-    
+    justify-content: center;
+    gap: 95px;
+    padding: 32px 0;
+    color: #075a84;
+    font-size: 1.1rem;
+      
 }
 
-.link-encabezado a:hover {
-    color: #046494;
-    font-size: 1.2rem;
-    
+.encabezado a:hover  {
+   
+    transform: scale(1.3rem);
+    color: #0b76ab;
 }
 
 /*banner */
@@ -68,24 +69,27 @@ body{
 
 #rol {
     font-family: "Cinzel", serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
-    right: 16vw;
+    right: 14vw;
     top: 33vw;
     word-spacing: 8px;
     letter-spacing: 3px;
+    color: #055177;
 
+    transition: all 5s;
 }
 
 .relleno .saludo {
     font-family: "Cinzel", serif;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     position: absolute;
     right: 22vw;
-    top: 14vw;
+    top: 16vw;
     word-spacing: 8px;
     letter-spacing: 3px;
     text-align: center;
+    color: #055177;
 }
 
 
@@ -95,8 +99,8 @@ body{
     border-radius: 100%;
     border: 5px solid #c5c4c4;
     position: absolute;
-    left: 14%;
-    top: 17%;
+    left: 9%;
+    top: 15%;
     filter: contrast(135%);
 }
 
@@ -122,8 +126,7 @@ body{
 .sociales li img:hover {
     background-color: #046494;
     border: 1px solid #046494;
-    width: 40px;
-    height: 40px;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -135,33 +138,35 @@ body{
 
 .cv a:hover {
     color: #046494; 
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     cursor: pointer;
 }
+
 
 /*sobre mi*/
 
 
 .sobre-mi {
     background-color: #d0dcf0;
-    font-size: 12px;
     width: 90%;
     height: 45%;
-    padding: 80px 40px;
+    padding: 70px 40px;
     margin: 57% auto 6% auto;
-    border-radius: 30px;
+    border-radius: 25px;
+    box-shadow: 7px 7px 25px 8px #898a904f;
+    border: 3px solid rgba(112, 122, 148, 0.285);
 }
 
 .sobre-mi h2 {
-    padding: 20px;
-    text-align: left;
+    padding-bottom: 25px;
+    text-align: center;
     font-size: 2rem;
 }
 
 .sobre-mi p {
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 30px;
 }
 
@@ -172,7 +177,7 @@ body{
 .titulo {
     text-align: center;
     font-size: 2rem;
-    margin: 70px;
+    margin: 80px;
     display: block;
     align-items: center;
     display: block;
@@ -180,66 +185,59 @@ body{
 }
 
 
-.formacion,
-.hobbies,
-.skills {
-width: 100%;
-height: 450px;
-padding-top: 40px;
-
-}
-.card-h,
 .card {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 25px;
-        
+    flex-wrap: wrap;    
 }
-.formacion .card .items,
-  .hobbies .card-h .item {
+
+.formacion .card .items {
     padding: 0;
     width: 15%;
     height: 180px;
-    color: whitesmoke;
     border-radius: 15px;
     text-align: center;
     background-color: #d2def3;
     filter: blur(0.3);
-   
+    font-size: 0.9rem;
+    justify-content: center;
+    border: 2px solid #adbbd68d;
 }
 
    
-  .card .items{
+ .skills .card .items{
     width: 15%;
-    height: 180px;
-    border: 3px solid #c7c4c4;
+    height: 150px;
     text-align: center;
     background-color: #d2def3;
     border-radius: 15px;
     filter: blur(0.3);
     padding: 60px 0;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    gap: 80px;
+    border: 2px solid #adbbd68d;
+}
 
+ .formacion .card .items h3 {
+    margin: 13px;
 }
 
 
 
  .skills .items img {
-  width: 15%;
-  height: 180px;
+  width: 50px;
+  height: 50px;
   
 }
 
-.hobbies .card-h .item img {
-    width: 100%;
-    height: 180px;
-    border-radius: 15px;
-}
-
-.card .items:hover,
-.hobbies .card-h .item:hover {
-    box-shadow: 7px 7px 25px 8px #898a90ae;
+.tarjeta:hover,
+.card .items:hover {
+    box-shadow: 7px 7px 25px 8px #898a9036;
     cursor: pointer;
+    border: 2px solid #acaef0;
 }
 
  
@@ -262,62 +260,62 @@ padding-top: 40px;
 
 .proyectos {
     width: 100%;
-    height: 500px;
-    padding: 7vw 19vw; 
-   
+  
 }
 
-.proyectos .card-p {
+.card-p {
     display: flex;
-    justify-content: space-evenly;
-}
-
-
-.proyectos .card-p .item-info {
-    width: 18%;
-    text-align: center;
-    font-size: 1rem;
-    margin: 5vw auto;
-}
-
-
-.proyectos .card-p .item-img img{
-  width: 19vw;
-  height: 27vw;
-  margin: 5px auto;
-}
-
-
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 45px;
     
+}
 
-
-.proyectos .item-info button {
-    width: 100px;
-    height:30px;
-    background-color: #121053;
+.tarjeta {
+    padding: 0;
+    width: 20%;
+    height: 220px;
+    border-radius: 15px;
     text-align: center;
-    border-radius: 25px;
-    margin: 12px auto;
+    background-color: #d2def3;
+    filter: blur(0.3);
+    font-size: 0.9rem;
+    justify-content: center;
+    border: 2px solid #adbbd68d;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+}
+
+.tarjeta button {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    background: #2f2e2e;
     border: none;
+    
+}
+
+.tarjeta button:hover {
+    transform: scale(0.95);
+    border: 3px solid #9dbef7;
+}
+
+.tarjeta button a {
     color: whitesmoke;
-   
 }
+  
 
-.proyectos .item-info button:hover {
-    border: 2px solid #2adadd;
-    cursor: pointer;
-}
 
-.proyectos .item-info a {
-    color: whitesmoke;
 
-}
 
 /*contacto */
 
 .contacto {
     width: 100%;
-    height: 690px;
+    height: 590px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(./imagenes/contacto2-Banner.png);
     background-size: cover;
@@ -344,7 +342,7 @@ padding-top: 40px;
     height:70px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 35px auto;
     font-size: 1.4rem;
     line-height: 3;
  
@@ -359,38 +357,40 @@ padding-top: 40px;
 
 .contacto .formulario {
     width: 35%;
-    height: auto;
+    height: 450px;
     text-align: center;
-    border: 4px solid lightgray;
-    margin: 30px auto;
+    border: 4px solid rgba(211, 211, 211, 0.94);
+    margin: 35px auto;
     border-radius: 15px;
     padding-top:20px;
     float: right;
     right: 100px;
-    filter: blur(0.3);
-    background: #d7d7d9de;
+    filter: blur(0.2);
+    background: #efefefa3;
+    box-shadow: 7px 7px 25px 8px #898a9036;
     
 }
 
 
 .contacto .formulario input {
-    margin: 25px auto;
-    width: 80%;
-    height: 50px;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    border: none;
-  
+    margin: 15px auto;
+    width: 85%;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #4d4c4c;
+    background: transparent;
 }
 
 
 .contacto .formulario textarea{
-    width: 80%;
+    width: 85%;
     height: 70px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: block;
     margin: 30px auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    background: transparent;
     
 }
 
@@ -398,22 +398,23 @@ padding-top: 40px;
     margin-left: 32px;
 }
 
-#enviar, #borrar {
-width: 35%;
-height: 45px;
+#enviar {
+width: 83%;
+height: 40px;
 margin-top: 25px;
 font-size: 18px;
-border-radius: 25px;
-background: #121053;
+border-radius: 10px;
+background: #202020f6;
 color: whitesmoke;
 border: none;
 
 }
 
 .proyectos .card-proyectos button:hover,
-#enviar:hover, #borrar:hover {
-    border: 2px solid #2adadd;
+#enviar:hover {
+    border: 3px solid #64a4ec;
     cursor: pointer;
+    transform: scale(0.9);
 }
 
 
@@ -422,7 +423,7 @@ border: none;
 footer {
     width: 100%;
     height: 100px;
-    background: #d7d7d9d3;
+    background: #d5d5edd3;
     filter: blur(0.9);
    
     
