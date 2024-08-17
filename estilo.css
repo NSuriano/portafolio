@@ -274,10 +274,10 @@ body{
 .tarjeta {
     padding: 0;
     width: 20%;
-    height: 220px;
+    height: 250px;
     border-radius: 15px;
     text-align: center;
-    background-color: #d2def3;
+    background-color: #dfe6f2;
     filter: blur(0.3);
     font-size: 0.9rem;
     justify-content: center;
@@ -287,6 +287,9 @@ body{
 .tarjeta img {
     width: 100%;
     height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 7px;
+
 }
 
 .tarjeta button {
@@ -295,6 +298,7 @@ body{
     border-radius: 10px;
     background: #2f2e2e;
     border: none;
+    margin-top: 7px;
     
 }
 
