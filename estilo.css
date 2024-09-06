@@ -534,46 +534,37 @@ footer p {
     .formacion,
     .skills {
         height: 28%;
-        margin-top: 30px;
+        margin-top: 35px;
     }
     
-    .hobbies {
-        height: 25%;
-        margin-top: 0;
-        padding: 0;
-    }
     
-    .card-h,
+   
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        gap: 5vw;
-        margin: 14vw;
+        gap: 20px;
+        margin: 0 5px;
              
     }
-    
-    .card-h .item {
-        margin: 9vw 1.5vw;
-        gap: 2vw;
-        
-    }
 
-  
+    .skills .card .items{
+        margin: 0 auto;
+        gap: 5px;
+    }
+    
+ 
     .formacion .card .items,
     .skills .card .items {
     
-        width: 40vw;
-        height: 43vw;
+        width: 41vw;
+        height: 47vw;
+        text-align: center;
+        justify-content: space-between;
+       
     }
     
-    .hobbies .card-h .item {
-        width: 42vw;
-        height: 49vw;
-        gap: 6vw;
-    }
-
-    
+       
 
     .item-p {
         display: flex;
@@ -582,31 +573,28 @@ footer p {
 
     }
 
-    .card .items {
-        width: 40%;
-        height: 30%;
-        text-align: center;
-        justify-content: space-around;
-
-    }
+          
 
     .proyectos {
-        margin: 3vw 0;
-        left: 10vw;
-        gap: 6vw;
-        padding: 50px 23px;
+        margin: 5vw auto;
+        gap: 15px;
         height: 35%;
     }
 
+    .proyectos .card-p .tarjeta {
+        width: 80%;
+        height: 270px;
+    }
+
     .proyectos .card-p .item-img img {
-        width: 40vw;
-        height: 53vw;
+        width: 35%;
+        height: 150px;
         
     }
 
     .contacto {
-        margin-top: 170px;
-        height: 100px;
+        margin-top: 20px;
+        height: 885px;
         text-align: left;
         margin-left: 0;
 
@@ -643,19 +631,18 @@ footer p {
     }
 
     .contacto .formulario {
-        margin-top: 90vw;
+        margin-top: 97vw;
         left: 5vw;
-        width: 90%;
-        height: 500px;
+        width: 85%;
+        height: 470px;
         text-align: center;
-        height: 90%;
-        position: absolute     
+         position: absolute     
     }  
 
     footer {
         margin-top: 100px;
         position: absolute;
-        top: 748%;
+        top: 1547vw;
         height: 23%;
     }
 }
@@ -705,11 +692,7 @@ footer p {
     
     }
 
-    .hobbies .card-h .item {
-        width: 19%;
-    } 
-
-
+   
     .skills .card .items,
     .formacion .card .items {
        width: 17.5%;
