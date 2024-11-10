@@ -507,8 +507,8 @@ footer p {
 
     .principal {
         top: 0;
-        width:100%;
-        height: 380px;
+        width: 100vw;
+        height: 250px;
         
     }
 
@@ -518,7 +518,7 @@ footer p {
         top: 8vw;
         margin: 0 auto;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 2vw;
         right: 19%;
     }
 
@@ -526,14 +526,14 @@ footer p {
         top: 30vw;
         margin: 0 auto;
         text-align: center;
-        font-size: 2.9vw;
-        right: 7%;
+        font-size: 0.7rem;
+        right: 6%;
     }
 
     .perfil img {
         width: 30vw;
         height: 30vw;
-        left: 9.5vw;
+        left: 7vw;
         top: 10vw;
     }
 
@@ -545,51 +545,52 @@ footer p {
 
     .botones {
         width: 100%;
-        gap: 3vw;
+        gap: 5vw;
         justify-content: center;
         left: 0;
-        margin: 1.2vw;
+        margin: 1.4vw;
     }
 
     .botones li button {
-        width: 23vw;
-        height: 10vw;
+        width: 27vw;
+        height: 12vw;
         left: 0;
         margin: 0;
 
         i {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             justify-content: center;
             align-items: center;
             padding: 0;
         }
 
         a { 
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             text-align: center;
             padding: 0;
         }
     }
 
     .sobre-mi {
-        width: 100%;
+        width: 100vw;
         height: auto;
-        margin-top: 50vw;
+        margin-top: 70vw;
         padding: 3vw 5.5vw;
-        top: 300vw;
+        top: 700px;
         border-radius: 0;
+        font-size: 0.7;
 
     }
 
     .titulo-h {
         margin-top: 240px;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .titulo-contacto,
     .titulo {
         margin: 5vw;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -606,7 +607,7 @@ footer p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        gap: 20px;
+        gap: 17px;
         margin: 0 5px;
              
     }
@@ -617,13 +618,23 @@ footer p {
     }
     
  
-    .formacion .card .items,
-    .skills .card .items {
+    .formacion .card .items
+   {
     
         width: 41vw;
         height: 47vw;
         text-align: center;
         justify-content: space-between;
+        margin-left: 8px;
+    }
+
+    .skills .card .items {
+        width: 40vw;
+        height: 30vw;
+        padding: 27px 0;
+        text-align: center;
+        justify-content: space-between;
+
        
     }
     
@@ -645,14 +656,14 @@ footer p {
     }
 
     .proyectos .card-p .tarjeta {
-        width: 80%;
-        height: 270px;
+        width: 90%;
+        height: 290px;
     }
 
     .proyectos .card-p .item-img img {
         width: 35%;
-        height: 150px;
-        
+        height: 180px;
+        margin: auto;
     }
 
     .contacto {
