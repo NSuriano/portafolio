@@ -26,7 +26,7 @@ body{
 .encabezado {
     position: fixed;
     z-index: 25;
-    background-color: #eaeaf2f9;
+    background:  #f2eeee;
     width: 100%;
     height: 80px;
     text-align: center;
@@ -35,25 +35,28 @@ body{
    
 }
 
+
+
 .encabezado .link-encabezado {
     display: flex;
     justify-content: center;
-    gap: 95px;
+    gap: 80px;
     padding: 32px;
     font-size: 1.1rem;
       
 }
 
 .encabezado ul li a {
-    padding: 5px 10px;
     margin-bottom: 8px;
+    padding: 7px 40px;
+    color: #0c76ab;
 }
 
 
 .encabezado a:hover  {
-   
-   text-decoration: underline;
-    color: #0c76ab;
+   border-bottom: 2px solid #0c76ab;
+  
+  
 }
 
 /*banner */
@@ -78,7 +81,7 @@ body{
     font-size: 1rem;
     position: absolute;
     right: 14vw;
-    top: 33vw;
+    top: 31vw;
     word-spacing: 8px;
     letter-spacing: 3px;
     color: #055177;
@@ -100,54 +103,63 @@ body{
 
 
 .perfil img {
-    width: 290px;
-    height: 290px;
+    width: 330px;
+    height: 330px;
     border-radius: 100%;
     border: 5px solid #c5c4c4;
     position: absolute;
     left: 9%;
-    top: 15%;
+    top: 13%;
     filter: contrast(135%);
 }
 
-.sociales {
-    display: flex;
-    top: 87%;
-    padding-left: 40%;
+.info {
     position: absolute;
-    justify-content: space-between;
-    
+    top: 87%;
+    padding-left: 34%;
+
 }
 
- .sociales li img {
-    width: 32px;
-    height: 32px;
-    background-color: #464646;
-    border-radius: 25px;
-    border: 1px solid #464646;
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
     margin-inline: 100px;
-   
-}
- 
-.sociales li img:hover {
-    background-color: #046494;
-    border: 1px solid #046494;
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
-.cv {
+
+.botones li button {
+    width: 120px;
+    height: 40px;
+    background-color: #2f2e2e;
+    border-radius: 7px;
+    border: rgba(211, 211, 211, 0.901);
+    box-shadow: 5px 5px 5px 2px #898a904b;
     text-align: center;
-    margin-left: 10%;
-    font-weight: 500;
+    
+    a {
+        color: whitesmoke;
+        padding: 20px 20px;
+        text-align: center;
+        text-wrap: nowrap;
+        font-size: 0.9rem;
+    }
+
+    i {
+        font-size: 1.6rem;
+        padding: 0 30px;
+    }
+
+   a:hover {
+    color:  #0cabfa;
+   }
 }
 
-.cv a:hover {
-    color: #046494; 
-    font-size: 18px;
-    text-align: center;
-    cursor: pointer;
-}
+.botones li button:hover {
+    transform: scale(1.1);
+    
+
+}   
 
 
 /*sobre mi*/
@@ -160,8 +172,8 @@ body{
     padding: 70px 40px;
     margin: 57% auto 6% auto;
     border-radius: 25px;
-    box-shadow: 7px 7px 25px 8px #898a902a;
-    border: 3px solid rgba(112, 122, 148, 0.189);
+    box-shadow: 7px 7px 25px 8px #898a903b;
+    border: 3px solid #707a9430;
 }
 
 .sobre-mi h2 {
@@ -432,13 +444,43 @@ border: none;
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 180px;
     background: #d5d5edd3;
     filter: blur(0.9);
    
     
       
 }
+
+
+
+.sociales{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 100px;
+    margin-inline: 100px;
+   
+    
+}
+
+ .sociales li img {
+    width: 32px;
+    height: 32px;
+    background-color: #464646;
+    border-radius: 25px;
+    border: 1px solid #464646;
+   
+   
+}
+ 
+.sociales li img:hover {
+    background-color: #046494;
+    border: 1px solid #046494;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 footer p {
     font-size: 1.4rem;
@@ -447,6 +489,7 @@ footer p {
     color:#464646;
  
 }
+
 
 
 /*responsivo mobile*/
@@ -464,13 +507,15 @@ footer p {
 
     .principal {
         top: 0;
-        width:100vw;
-        height: 295px;
+        width:100%;
+        height: 380px;
         
     }
 
+    
+
     .relleno .saludo {
-        top: 5vw;
+        top: 8vw;
         margin: 0 auto;
         text-align: center;
         font-size: 2.5vw;
@@ -478,10 +523,10 @@ footer p {
     }
 
     #rol {
-        top: 25vw;
+        top: 30vw;
         margin: 0 auto;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 2.9vw;
         right: 7%;
     }
 
@@ -492,20 +537,38 @@ footer p {
         top: 10vw;
     }
 
-    .sociales {
-        top: 33vw;
+    .info {
+        top:43vw;
+        padding-left: 0;
+        margin-inline: 0;
+    }
+
+    .botones {
+        width: 100%;
+        gap: 3vw;
+        justify-content: center;
         left: 0;
+        margin: 1.2vw;
     }
 
-    .sociales li img {
-        width: 6vw;
-        height: 6vw;
-        margin-inline: 6vw;
+    .botones li button {
+        width: 23vw;
+        height: 10vw;
+        left: 0;
+        margin: 0;
 
-    }
+        i {
+            font-size: 1.3rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
 
-    .cv {
-        font-size: 0.7rem;
+        a { 
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 0;
+        }
     }
 
     .sobre-mi {
@@ -513,7 +576,7 @@ footer p {
         height: auto;
         margin-top: 50vw;
         padding: 3vw 5.5vw;
-        top: 16vw;
+        top: 300vw;
         border-radius: 0;
 
     }
@@ -658,6 +721,7 @@ footer p {
 
     .principal {
         width: 100%;
+        height: 80vw;
         top: 8%;
         margin-bottom: 8vw;
     }
